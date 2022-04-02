@@ -1,0 +1,35 @@
+#gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vw;
+  overflow: auto;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+#gallery li {
+  position: relative;
+  list-style-position: inside;
+  outline: 2px dashed #999;
+  outline-offset: -2px;
+  padding: 8px;
+}
+
+#gallery button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+#gallery li img {
+  object-fit: contain;
+  height: 480px;
+  width: 480px;
+}
+
+#gallery li + li {
+  margin-left: 24px;
+}
