@@ -33,3 +33,15 @@
 #gallery li + li {
   margin-left: 24px;
 }
+
+#gallery:has(li) + .twitter-tweet {
+  display: none !important;
+}
+
+@media screen and (min-width: 1280px) {
+  .twitter-tweet {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
